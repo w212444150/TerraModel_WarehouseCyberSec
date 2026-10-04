@@ -1,0 +1,49 @@
+# TerraModel pipeline configuration
+# All random seeds pin here so runs are reproducible.
+
+seed: 42
+
+paths:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  threat_dir: data/threat
+  models_dir: models
+  reports_dir: reports
+
+data_generation:
+  # Synthetic OT warehouse telemetry
+  normal_scenarios: 4
+  attack_scenarios: 4
+  minutes_per_scenario: 10
+  plc_sample_hz: 10        # PLC register sample rate
+  robot_sample_hz: 20      # Robot joint state publish rate
+  network_sample_hz: 50    # Network flow aggregation rate
+  num_plcs: 4
+  num_robots: 3
+  joints_per_robot: 6
+
+split:
+  train_frac: 0.70
+  val_frac: 0.15
+  test_frac: 0.15
+  stratify_col: attack_class
+
+agent1:
+  model: isolation_forest
+  n_estimators: 200
+  contamination: 0.1
+
+agent2:
+  # Rule-based CVSS plus exposure score weights
+  cvss_weight: 0.6
+  exposure_weight: 0.3
+  age_weight: 0.1
+  top_k: 10
+
+agent3:
+  # Mahalanobis distance threshold on trajectory deviations
+  threshold_percentile: 95
+
+threat_sources:
+  attack_stix_url: "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/ics-attack/ics-attack.json"
+  cisa_advisories_url: "https://www.cisa.gov/cybersecurity-advisories/ics-advisories.json"

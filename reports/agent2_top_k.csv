@@ -1,0 +1,11 @@
+advisory_id,title,vendor,product,asset_type,cvss_v3,released,age_days,exposure_hint,url,cvss_norm,age_score,asset_is_plc,asset_is_hmi,asset_is_robot_controller,asset_is_network_switch,asset_is_engineering_workstation,asset_is_other,score
+ICSA-24-299-04,Advantech WebAccess SCADA,Advantech,WebAccess SCADA,hmi,8.9,2024-10-25,709,1,https://www.cisa.gov/news-events/ics-advisories/icsa-24-299-04,0.89,0.6,0,1,0,0,0,0,0.8940000000000001
+ICSA-25-014-01,Beckhoff TwinCAT PLC Runtime,Beckhoff,TwinCAT PLC Runtime,plc,8.5,2025-01-14,628,1,https://www.cisa.gov/news-events/ics-advisories/icsa-25-014-01,0.85,0.6,1,0,0,0,0,0,0.8700000000000001
+ICSA-25-028-01,Hitachi Energy MicroSCADA,Hitachi Energy,MicroSCADA Pro,hmi,7.5,2025-01-28,614,1,https://www.cisa.gov/news-events/ics-advisories/icsa-25-028-01,0.75,0.6,0,1,0,0,0,0,0.81
+ICSA-25-056-01,Rockwell ControlLogix,Rockwell Automation,ControlLogix PLC,plc,9.3,2025-02-25,586,0,https://www.cisa.gov/news-events/ics-advisories/icsa-25-056-01,0.93,0.6,1,0,0,0,0,0,0.6180000000000001
+ICSA-25-105-01,Siemens SIMATIC CP,Siemens,SIMATIC CP,other,9.1,2025-04-15,537,0,https://www.cisa.gov/news-events/ics-advisories/icsa-25-105-01,0.91,0.6,0,0,0,0,0,1,0.6060000000000001
+ICSA-24-355-01,Universal Robots UR Controller,Universal Robots,UR Robot Controller,robot_controller,9.0,2024-12-20,653,0,https://www.cisa.gov/news-events/ics-advisories/icsa-24-355-01,0.9,0.6,0,0,1,0,0,0,0.6000000000000001
+ICSA-25-070-04,Omron NX1P2 PLC,Omron,NX1P2 PLC,plc,8.8,2025-03-11,572,0,https://www.cisa.gov/news-events/ics-advisories/icsa-25-070-04,0.8800000000000001,0.6,1,0,0,0,0,0,0.5880000000000001
+ICSA-25-105-02,Rockwell FactoryTalk View,Rockwell Automation,FactoryTalk View,other,8.6,2025-04-15,537,0,https://www.cisa.gov/news-events/ics-advisories/icsa-25-105-02,0.86,0.6,0,0,0,0,0,1,0.5760000000000001
+ICSA-24-341-04,WAGO Controller 750-xxx,WAGO,750-xxx Controller,other,8.6,2024-12-06,667,0,https://www.cisa.gov/news-events/ics-advisories/icsa-24-341-04,0.86,0.6,0,0,0,0,0,1,0.5760000000000001
+ICSA-24-320-02,Keyence KV-8000 PLC,Keyence,KV-8000 PLC,plc,8.3,2024-11-15,688,0,https://www.cisa.gov/news-events/ics-advisories/icsa-24-320-02,0.8300000000000001,0.6,1,0,0,0,0,0,0.558

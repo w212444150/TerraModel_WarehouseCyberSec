@@ -1,0 +1,155 @@
+{
+  "agent1": {
+    "f1": 0.24242424242424243,
+    "precision": 0.5490196078431373,
+    "recall": 0.15555555555555556,
+    "pr_auc": 0.5452311714003393,
+    "confusion_matrix": [
+      [
+        314,
+        46
+      ],
+      [
+        304,
+        56
+      ]
+    ],
+    "n_test": 720,
+    "n_attack_test": 360
+  },
+  "agent2": {
+    "ranked_count": 25,
+    "top_k": 10,
+    "top_k_asset_distribution": {
+      "plc": 4,
+      "other": 3,
+      "hmi": 2,
+      "robot_controller": 1
+    },
+    "top_k_mean_cvss": 8.66,
+    "top_k_mean_score": 0.6696,
+    "bottom_k_mean_cvss": 7.13,
+    "top_k_rows": [
+      {
+        "advisory_id": "ICSA-24-299-04",
+        "vendor": "Advantech",
+        "product": "WebAccess SCADA",
+        "asset_type": "hmi",
+        "cvss_v3": 8.9,
+        "exposure_hint": 1,
+        "age_days": 709,
+        "score": 0.8940000000000001
+      },
+      {
+        "advisory_id": "ICSA-25-014-01",
+        "vendor": "Beckhoff",
+        "product": "TwinCAT PLC Runtime",
+        "asset_type": "plc",
+        "cvss_v3": 8.5,
+        "exposure_hint": 1,
+        "age_days": 628,
+        "score": 0.8700000000000001
+      },
+      {
+        "advisory_id": "ICSA-25-028-01",
+        "vendor": "Hitachi Energy",
+        "product": "MicroSCADA Pro",
+        "asset_type": "hmi",
+        "cvss_v3": 7.5,
+        "exposure_hint": 1,
+        "age_days": 614,
+        "score": 0.81
+      },
+      {
+        "advisory_id": "ICSA-25-056-01",
+        "vendor": "Rockwell Automation",
+        "product": "ControlLogix PLC",
+        "asset_type": "plc",
+        "cvss_v3": 9.3,
+        "exposure_hint": 0,
+        "age_days": 586,
+        "score": 0.6180000000000001
+      },
+      {
+        "advisory_id": "ICSA-25-105-01",
+        "vendor": "Siemens",
+        "product": "SIMATIC CP",
+        "asset_type": "other",
+        "cvss_v3": 9.1,
+        "exposure_hint": 0,
+        "age_days": 537,
+        "score": 0.6060000000000001
+      },
+      {
+        "advisory_id": "ICSA-24-355-01",
+        "vendor": "Universal Robots",
+        "product": "UR Robot Controller",
+        "asset_type": "robot_controller",
+        "cvss_v3": 9.0,
+        "exposure_hint": 0,
+        "age_days": 653,
+        "score": 0.6000000000000001
+      },
+      {
+        "advisory_id": "ICSA-25-070-04",
+        "vendor": "Omron",
+        "product": "NX1P2 PLC",
+        "asset_type": "plc",
+        "cvss_v3": 8.8,
+        "exposure_hint": 0,
+        "age_days": 572,
+        "score": 0.5880000000000001
+      },
+      {
+        "advisory_id": "ICSA-25-105-02",
+        "vendor": "Rockwell Automation",
+        "product": "FactoryTalk View",
+        "asset_type": "other",
+        "cvss_v3": 8.6,
+        "exposure_hint": 0,
+        "age_days": 537,
+        "score": 0.5760000000000001
+      },
+      {
+        "advisory_id": "ICSA-24-341-04",
+        "vendor": "WAGO",
+        "product": "750-xxx Controller",
+        "asset_type": "other",
+        "cvss_v3": 8.6,
+        "exposure_hint": 0,
+        "age_days": 667,
+        "score": 0.5760000000000001
+      },
+      {
+        "advisory_id": "ICSA-24-320-02",
+        "vendor": "Keyence",
+        "product": "KV-8000 PLC",
+        "asset_type": "plc",
+        "cvss_v3": 8.3,
+        "exposure_hint": 0,
+        "age_days": 688,
+        "score": 0.558
+      }
+    ]
+  },
+  "agent3": {
+    "f1": 0.37420269312544296,
+    "precision": 0.797583081570997,
+    "recall": 0.24444444444444444,
+    "pr_auc": 0.7115574707389989,
+    "threshold": 3.2619596274822404,
+    "threshold_percentile": 95,
+    "confusion_matrix": [
+      [
+        1013,
+        67
+      ],
+      [
+        816,
+        264
+      ]
+    ],
+    "n_test": 2160,
+    "n_attack_test": 1080
+  }
+}

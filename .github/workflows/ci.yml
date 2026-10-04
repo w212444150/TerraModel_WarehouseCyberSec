@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fetch threat data (ATT&CK; CISA falls back to sample on CI)
+        run: |
+          python collectors/fetch_attack.py
+          python collectors/fetch_cisa.py
+        continue-on-error: true
+
+      - name: Generate synthetic data
+        run: python collectors/generate_synthetic.py
+
+      - name: Clean + feature engineer + split
+        run: |
+          python pipeline/clean.py
+          python pipeline/features.py
+          python pipeline/split.py
+
+      - name: Train baselines
+        run: |
+          python agents/agent1_anomaly/baseline.py
+          python agents/agent2_assessment/baseline.py
+          python agents/agent3_integrity/baseline.py
+
+      - name: Build EDA
+        run: python notebooks/06_baseline_eda.py
+
+      - name: Run tests
+        run: python -m pytest tests/ -v
+
+      - name: Upload metrics summary
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrics
+          path: reports/metrics_summary.json

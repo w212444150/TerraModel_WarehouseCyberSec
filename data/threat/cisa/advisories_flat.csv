@@ -1,0 +1,26 @@
+advisory_id,title,vendor,product,asset_type,cvss_v3,released,age_days,exposure_hint,url
+ICSA-25-105-01,Siemens SIMATIC CP,Siemens,SIMATIC CP,other,9.1,2025-04-15,537,0,https://www.cisa.gov/news-events/ics-advisories/icsa-25-105-01
+ICSA-25-105-02,Rockwell FactoryTalk View,Rockwell Automation,FactoryTalk View,other,8.6,2025-04-15,537,0,https://www.cisa.gov/news-events/ics-advisories/icsa-25-105-02
+ICSA-25-098-03,Schneider Electric Modicon PLC,Schneider Electric,Modicon PLC,plc,7.5,2025-04-08,544,0,https://www.cisa.gov/news-events/ics-advisories/icsa-25-098-03
+ICSA-25-091-01,ABB Robotics IRC5,ABB,IRC5 Robot Controller,robot_controller,8.1,2025-04-01,551,0,https://www.cisa.gov/news-events/ics-advisories/icsa-25-091-01
+ICSA-25-084-02,Mitsubishi MELSEC HMI,Mitsubishi Electric,MELSEC HMI,hmi,6.8,2025-03-25,558,0,https://www.cisa.gov/news-events/ics-advisories/icsa-25-084-02
+ICSA-25-077-01,FANUC CNC Robot,FANUC,CNC Robot Interface,robot_controller,7.2,2025-03-18,565,0,https://www.cisa.gov/news-events/ics-advisories/icsa-25-077-01
+ICSA-25-070-04,Omron NX1P2 PLC,Omron,NX1P2 PLC,plc,8.8,2025-03-11,572,0,https://www.cisa.gov/news-events/ics-advisories/icsa-25-070-04
+ICSA-25-063-02,Siemens SCALANCE Switch,Siemens,SCALANCE Switch,network_switch,7.0,2025-03-04,579,0,https://www.cisa.gov/news-events/ics-advisories/icsa-25-063-02
+ICSA-25-056-01,Rockwell ControlLogix,Rockwell Automation,ControlLogix PLC,plc,9.3,2025-02-25,586,0,https://www.cisa.gov/news-events/ics-advisories/icsa-25-056-01
+ICSA-25-049-03,KUKA KR C4 Controller,KUKA,KR C4 Robot Controller,robot_controller,7.8,2025-02-18,593,0,https://www.cisa.gov/news-events/ics-advisories/icsa-25-049-03
+ICSA-25-042-01,GE Fanuc PACSystem,GE Fanuc,PACSystem RX3i PLC,plc,8.2,2025-02-11,600,0,https://www.cisa.gov/news-events/ics-advisories/icsa-25-042-01
+ICSA-25-035-02,Phoenix Contact Industrial Switch,Phoenix Contact,FL Switch,network_switch,6.5,2025-02-04,607,0,https://www.cisa.gov/news-events/ics-advisories/icsa-25-035-02
+ICSA-25-028-01,Hitachi Energy MicroSCADA,Hitachi Energy,MicroSCADA Pro,hmi,7.5,2025-01-28,614,1,https://www.cisa.gov/news-events/ics-advisories/icsa-25-028-01
+ICSA-25-021-02,Yokogawa STARDOM Controller,Yokogawa,STARDOM FCN Controller,other,8.0,2025-01-21,621,0,https://www.cisa.gov/news-events/ics-advisories/icsa-25-021-02
+ICSA-25-014-01,Beckhoff TwinCAT PLC Runtime,Beckhoff,TwinCAT PLC Runtime,plc,8.5,2025-01-14,628,1,https://www.cisa.gov/news-events/ics-advisories/icsa-25-014-01
+ICSA-25-007-03,Honeywell Experion PKS,Honeywell,Experion PKS,other,7.4,2025-01-07,635,0,https://www.cisa.gov/news-events/ics-advisories/icsa-25-007-03
+ICSA-24-355-01,Universal Robots UR Controller,Universal Robots,UR Robot Controller,robot_controller,9.0,2024-12-20,653,0,https://www.cisa.gov/news-events/ics-advisories/icsa-24-355-01
+ICSA-24-348-02,Delta Electronics ISPSoft,Delta Electronics,ISPSoft Programming Software,engineering_workstation,7.3,2024-12-13,660,0,https://www.cisa.gov/news-events/ics-advisories/icsa-24-348-02
+ICSA-24-341-04,WAGO Controller 750-xxx,WAGO,750-xxx Controller,other,8.6,2024-12-06,667,0,https://www.cisa.gov/news-events/ics-advisories/icsa-24-341-04
+ICSA-24-334-01,Red Lion Crimson HMI,Red Lion,Crimson HMI,hmi,6.9,2024-11-29,674,0,https://www.cisa.gov/news-events/ics-advisories/icsa-24-334-01
+ICSA-24-327-03,Yaskawa Motoman Robot Controller,Yaskawa,Motoman Robot Controller,robot_controller,7.9,2024-11-22,681,0,https://www.cisa.gov/news-events/ics-advisories/icsa-24-327-03
+ICSA-24-320-02,Keyence KV-8000 PLC,Keyence,KV-8000 PLC,plc,8.3,2024-11-15,688,0,https://www.cisa.gov/news-events/ics-advisories/icsa-24-320-02
+ICSA-24-313-01,Moxa EDS Switch,Moxa,EDS Industrial Switch,network_switch,7.1,2024-11-08,695,0,https://www.cisa.gov/news-events/ics-advisories/icsa-24-313-01
+ICSA-24-306-02,Emerson Ovation Controller,Emerson,Ovation Controller,other,7.6,2024-11-01,702,0,https://www.cisa.gov/news-events/ics-advisories/icsa-24-306-02
+ICSA-24-299-04,Advantech WebAccess SCADA,Advantech,WebAccess SCADA,hmi,8.9,2024-10-25,709,1,https://www.cisa.gov/news-events/ics-advisories/icsa-24-299-04

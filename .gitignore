@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Virtual env
+venv/
+env/
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (regenerate from code; keep structure with .gitkeep)
+data/raw/*.parquet
+data/raw/*.csv
+data/processed/*.parquet
+data/processed/*.joblib
+data/threat/cisa/*.json
+data/threat/attack/*.json
+
+# Models
+models/*.joblib
+models/*.pkl
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Reports
+reports/*.png
+reports/*.html
+
+# Notebooks
+.ipynb_checkpoints/

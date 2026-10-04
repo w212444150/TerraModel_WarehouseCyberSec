@@ -1,0 +1,25 @@
+{
+  "plc": {
+    "initial_rows": 192000,
+    "dropped_nonfinite": 0,
+    "dropped_implausible": 0,
+    "final_rows": 192000
+  },
+  "robot": {
+    "initial_rows": 1728000,
+    "dropped_nonfinite": 0,
+    "dropped_implausible": 0,
+    "final_rows": 1728000
+  },
+  "network": {
+    "initial_rows": 4800,
+    "dropped_nonfinite": 0,
+    "dropped_implausible": 0,
+    "final_rows": 4800
+  },
+  "overall": {
+    "total_input_rows": 1924800,
+    "total_dropped": 0,
+    "removal_rate_pct": 0.0
+  }
+}
