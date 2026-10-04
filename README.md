@@ -4,6 +4,15 @@ Capstone project by **Robert B. Thompson** and **Cesar Noriega** (Team TerraMode
 
 Multi-agent AI system for detecting cyber threats against robots, PLCs, and industrial sensors in an automated warehouse environment. Three detection agents feed an orchestrator that tags findings with real MITRE ATT&CK for ICS technique IDs.
 
+## Project phases
+
+| Phase | Weeks | Deliverable | Document |
+|---|---|---|---|
+| Phase 01 | 1 through 3 | Initial Advance proposal (problem, solution, scope, roadmap) | [`docs/phase01-initial-advance.md`](docs/phase01-initial-advance.md) + [`docs/phase01-initial-advance.pptx`](docs/phase01-initial-advance.pptx) |
+| Phase 02 | 4 through 6 | Data pipeline, feature engineering, baseline models | [`docs/phase02-data-report.md`](docs/phase02-data-report.md) |
+| Phase 03 | 7 through 9 | Final supervised models (planned) | - |
+| Phase 04 | 10 through 12 | Integration, red team dry run, final delivery (planned) | - |
+
 ## Honest scope statement
 
 This repository is an **academic research baseline**, not a production security product. It uses **synthetic warehouse OT telemetry** generated in pure Python because the Factory I/O + OpenPLC + ROS 2 stack from the proposal is not yet set up. The synthetic data is shaped to mirror real OT telemetry so the preprocessing, feature engineering, and model code transfers directly when a real simulation feeds the pipeline.
