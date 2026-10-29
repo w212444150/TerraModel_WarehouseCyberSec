@@ -35,6 +35,19 @@ phase03:
 	$(PYRUN) agents/orchestrator/phase03_pipeline.py
 	$(PYRUN) -c "from experiments.tracker import consolidate; consolidate()"
 
+phase03-fixes:
+	$(PYTHON) collectors/generate_synthetic_realistic.py
+	$(PYTHON) pipeline/clean.py
+	$(PYTHON) pipeline/features.py
+	$(PYRUN) pipeline/features_augmented.py
+	$(PYTHON) pipeline/split.py
+	$(PYRUN) pipeline/split_augmented.py
+	$(PYTHON) collectors/fetch_kev.py
+	$(PYRUN) agents/agent1_anomaly/phase03_augmented.py
+	$(PYRUN) agents/agent2_assessment/phase03_kev.py
+	$(PYRUN) agents/orchestrator/phase03_pipeline.py
+	$(PYRUN) -c "from experiments.tracker import consolidate; consolidate()"
+
 test:
 	$(PYRUN) -m pytest tests/ -v
 

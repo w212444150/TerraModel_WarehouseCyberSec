@@ -1,0 +1,70 @@
+{
+  "fix": "Limitation 1 - Agent 1 now sees PLC features",
+  "results": {
+    "network_only": {
+      "n_features": 15,
+      "best_optuna_val_pr_auc": 0.6927212517699274,
+      "best_params": {
+        "n_estimators": 243,
+        "max_depth": 5,
+        "learning_rate": 0.06333268775321842,
+        "subsample": 0.6563696899899051,
+        "colsample_bytree": 0.9208787923016158,
+        "min_child_weight": 1,
+        "reg_lambda": 4.9344346830025865
+      },
+      "test_metrics": {
+        "f1": 0.5255255255255256,
+        "precision": 0.5718954248366013,
+        "recall": 0.4861111111111111,
+        "pr_auc": 0.6573370434324101,
+        "roc_auc": 0.5920447530864198,
+        "confusion_matrix": [
+          [
+            229,
+            131
+          ],
+          [
+            185,
+            175
+          ]
+        ]
+      }
+    },
+    "network_plus_plc": {
+      "n_features": 20,
+      "best_optuna_val_pr_auc": 1.0,
+      "best_params": {
+        "n_estimators": 224,
+        "max_depth": 3,
+        "learning_rate": 0.03443965271205262,
+        "subsample": 0.8782044557318198,
+        "colsample_bytree": 0.6375633354621403,
+        "min_child_weight": 3,
+        "reg_lambda": 0.4799409501631482
+      },
+      "test_metrics": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "pr_auc": 0.9999999999999999,
+        "roc_auc": 0.9999999999999999,
+        "confusion_matrix": [
+          [
+            360,
+            0
+          ],
+          [
+            0,
+            360
+          ]
+        ]
+      }
+    }
+  },
+  "augmentation_delta": {
+    "f1_delta": 0.4745,
+    "pr_auc_delta": 0.3427,
+    "recall_delta": 0.5139
+  }
+}

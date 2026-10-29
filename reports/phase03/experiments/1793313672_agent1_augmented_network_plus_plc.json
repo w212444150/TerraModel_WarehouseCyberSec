@@ -1,0 +1,25 @@
+{
+  "name": "agent1_augmented_network_plus_plc",
+  "started_at": 1793313672.7954123,
+  "duration_s": 0.0,
+  "params": {
+    "model": "XGBClassifier",
+    "feature_set": "network_plus_plc",
+    "n_features": 20,
+    "n_estimators": 224.0,
+    "max_depth": 3.0,
+    "learning_rate": 0.03443965271205262,
+    "subsample": 0.8782044557318198,
+    "colsample_bytree": 0.6375633354621403,
+    "min_child_weight": 3.0,
+    "reg_lambda": 0.4799409501631482
+  },
+  "metrics": {
+    "test_f1": 1.0,
+    "test_precision": 1.0,
+    "test_recall": 1.0,
+    "test_pr_auc": 0.9999999999999999,
+    "test_roc_auc": 0.9999999999999999
+  },
+  "artifacts": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "agent2_logistic_kev",
+  "started_at": 1793313544.2982745,
+  "duration_s": 0.0,
+  "params": {
+    "model": "LogisticRegression",
+    "label": "is_kev_match",
+    "n_advisories": 25,
+    "n_positive": 16,
+    "cvss_norm": 0.9941470795281631,
+    "exposure_hint": -0.07814043023346903,
+    "age_score": 0.0,
+    "asset_is_plc": 0.3331338792446778,
+    "asset_is_hmi": 0.16362578482876916,
+    "asset_is_robot_controller": 1.0430033693113736,
+    "asset_is_network_switch": 0.12645150952137132,
+    "asset_is_engineering_workstation": -0.3492192398074811
+  },
+  "metrics": {
+    "cv_roc_auc_mean": 0.6111111111111112,
+    "cv_pr_auc_mean": 0.8182407407407407,
+    "precision_at_top_k": 1.0
+  },
+  "artifacts": []
+}

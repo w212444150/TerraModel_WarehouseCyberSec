@@ -1,0 +1,19 @@
+{
+  "name": "agent1_random_forest",
+  "started_at": 1793313657.7940269,
+  "duration_s": 1.275,
+  "params": {
+    "model": "RandomForestClassifier",
+    "n_estimators": 300,
+    "min_samples_leaf": 2,
+    "class_weight": "balanced"
+  },
+  "metrics": {
+    "val_f1": 0.539291217257319,
+    "val_precision": 0.6055363321799307,
+    "val_recall": 0.4861111111111111,
+    "val_pr_auc": 0.6848293420753173,
+    "val_roc_auc": 0.6150925925925926
+  },
+  "artifacts": []
+}

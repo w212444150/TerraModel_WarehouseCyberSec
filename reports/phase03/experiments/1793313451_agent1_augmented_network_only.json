@@ -1,0 +1,25 @@
+{
+  "name": "agent1_augmented_network_only",
+  "started_at": 1793313451.31184,
+  "duration_s": 0.0,
+  "params": {
+    "model": "XGBClassifier",
+    "feature_set": "network_only",
+    "n_features": 15,
+    "n_estimators": 199.0,
+    "max_depth": 9.0,
+    "learning_rate": 0.01169785807970127,
+    "subsample": 0.898277841611297,
+    "colsample_bytree": 0.7572859129174475,
+    "min_child_weight": 4.0,
+    "reg_lambda": 2.0325504681019697
+  },
+  "metrics": {
+    "test_f1": 0.46815834767641995,
+    "test_precision": 0.6153846153846154,
+    "test_recall": 0.37777777777777777,
+    "test_pr_auc": 0.6489078480969155,
+    "test_roc_auc": 0.5767592592592593
+  },
+  "artifacts": []
+}

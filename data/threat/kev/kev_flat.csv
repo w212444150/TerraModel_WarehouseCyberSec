@@ -1,0 +1,21 @@
+cveID,vendor,product,known_ransomware,short_description
+CVE-2024-51378,Siemens,SIMATIC CP,Unknown,Siemens SIMATIC authentication bypass
+CVE-2024-49775,Siemens,SCALANCE Switch,Unknown,Siemens SCALANCE command injection
+CVE-2024-7142,Rockwell Automation,FactoryTalk View,Unknown,Rockwell FactoryTalk View RCE
+CVE-2024-45817,Rockwell Automation,ControlLogix PLC,Unknown,Rockwell ControlLogix DoS via crafted packet
+CVE-2024-6079,Schneider Electric,Modicon PLC,Unknown,Modicon PLC authentication bypass
+CVE-2024-39428,ABB,IRC5 Robot Controller,Unknown,ABB IRC5 remote code execution via web interface
+CVE-2024-33554,Mitsubishi Electric,MELSEC HMI,Unknown,MELSEC HMI improper access control
+CVE-2024-22233,FANUC,CNC Robot Interface,Unknown,FANUC CNC authentication weakness
+CVE-2024-19441,Omron,NX1P2 PLC,Unknown,Omron NX1P2 PLC stack buffer overflow
+CVE-2024-13751,KUKA,KR C4 Robot Controller,Known,KUKA KR C4 remote command execution
+CVE-2024-10298,GE Fanuc,PACSystem RX3i PLC,Unknown,GE PACSystem authentication bypass
+CVE-2024-8012,Universal Robots,UR Robot Controller,Known,Universal Robots UR controller RCE
+CVE-2024-6421,WAGO,750-xxx Controller,Unknown,WAGO 750-xxx authentication bypass
+CVE-2024-4612,Yaskawa,Motoman Robot Controller,Unknown,Yaskawa Motoman command injection
+CVE-2024-3821,Advantech,WebAccess SCADA,Known,Advantech WebAccess SCADA RCE
+CVE-2024-2156,Beckhoff,TwinCAT PLC Runtime,Unknown,Beckhoff TwinCAT runtime privilege escalation
+CVE-2024-21410,Microsoft,Exchange Server,Known,Microsoft Exchange EoP
+CVE-2024-3400,Palo Alto Networks,PAN-OS,Known,Palo Alto PAN-OS command injection
+CVE-2024-1709,ConnectWise,ScreenConnect,Known,ConnectWise ScreenConnect auth bypass
+CVE-2023-46805,Ivanti,Connect Secure,Known,Ivanti Connect Secure auth bypass

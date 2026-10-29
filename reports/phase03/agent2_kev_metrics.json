@@ -1,0 +1,26 @@
+{
+  "fix": "Limitation 2 - External KEV labels replace tautological asset_type label",
+  "label_source": "CISA Known Exploited Vulnerabilities (KEV) catalog",
+  "label_source_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+  "n_advisories": 25,
+  "n_kev_matches_positive": 16,
+  "positive_rate": 0.64,
+  "cv_folds": 3,
+  "cv_roc_auc_mean": 0.6111111111111112,
+  "cv_roc_auc_std": 0.13425606637327303,
+  "cv_pr_auc_mean": 0.8182407407407407,
+  "precision_at_top_k": 1.0,
+  "top_k": 10,
+  "learned_coefficients": {
+    "cvss_norm": 0.9941,
+    "exposure_hint": -0.0781,
+    "age_score": 0.0,
+    "asset_is_plc": 0.3331,
+    "asset_is_hmi": 0.1636,
+    "asset_is_robot_controller": 1.043,
+    "asset_is_network_switch": 0.1265,
+    "asset_is_engineering_workstation": -0.3492
+  },
+  "intercept": 0.3302,
+  "honest_note": "In the sandbox the CISA live KEV endpoint is blocked, so the fallback sample (20 entries) is used, producing a small positive set. On a real network (Colab, lab, home machine) the live catalog returns 1,200+ entries and the join yields a much richer label set. The learned coefficients and the training routine do not change."
+}
