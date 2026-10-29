@@ -9,3 +9,7 @@ matplotlib>=3.8
 seaborn>=0.13
 pytest>=8.0
 tqdm>=4.66
+# Phase 03 supervised + explainability
+xgboost>=2.0
+shap>=0.44
+optuna>=3.5

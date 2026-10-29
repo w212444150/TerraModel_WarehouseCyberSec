@@ -1,0 +1,86 @@
+{
+  "champion": "xgboost",
+  "best_optuna_val_pr_auc": 0.6880257872147375,
+  "best_optuna_params": {
+    "n_estimators": 199,
+    "max_depth": 9,
+    "learning_rate": 0.01169785807970127,
+    "subsample": 0.898277841611297,
+    "colsample_bytree": 0.7572859129174475,
+    "min_child_weight": 4,
+    "reg_lambda": 2.0325504681019697
+  },
+  "test_random_forest": {
+    "f1": 0.4890282131661442,
+    "precision": 0.5611510791366906,
+    "recall": 0.43333333333333335,
+    "pr_auc": 0.6529971830973686,
+    "roc_auc": 0.5805671296296296,
+    "confusion_matrix": [
+      [
+        238,
+        122
+      ],
+      [
+        204,
+        156
+      ]
+    ]
+  },
+  "test_xgboost": {
+    "f1": 0.43399638336347196,
+    "precision": 0.6217616580310881,
+    "recall": 0.3333333333333333,
+    "pr_auc": 0.6603605348639456,
+    "roc_auc": 0.5882330246913581,
+    "confusion_matrix": [
+      [
+        287,
+        73
+      ],
+      [
+        240,
+        120
+      ]
+    ]
+  },
+  "baseline_isolation_forest_phase02": {
+    "f1": 0.24242424242424243,
+    "precision": 0.5490196078431373,
+    "recall": 0.15555555555555556,
+    "pr_auc": 0.5452311714003393,
+    "confusion_matrix": [
+      [
+        314,
+        46
+      ],
+      [
+        304,
+        56
+      ]
+    ],
+    "n_test": 720,
+    "n_attack_test": 360
+  },
+  "lift_over_baseline": {
+    "f1_delta": 0.1916,
+    "pr_auc_delta": 0.1151
+  },
+  "feature_cols": [
+    "pkt_count",
+    "pkt_size_mean",
+    "pkt_size_std",
+    "inter_arrival_mean_ms",
+    "unique_src_ips",
+    "unique_dst_ips",
+    "frac_modbus_tcp",
+    "frac_ethernet_ip",
+    "frac_profinet",
+    "frac_http",
+    "frac_other",
+    "proto_entropy",
+    "size_cv",
+    "src_dst_ratio",
+    "pkt_count_deviation"
+  ]
+}

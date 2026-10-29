@@ -1,0 +1,24 @@
+{
+  "name": "agent2_logistic",
+  "started_at": 1793310302.8274276,
+  "duration_s": 0.0,
+  "params": {
+    "model": "LogisticRegression",
+    "cv_folds": 3,
+    "cvss_norm": -0.06213515313348216,
+    "exposure_hint": 0.423791118873706,
+    "age_score": 0.0,
+    "asset_is_plc": 1.4412502396199456,
+    "asset_is_hmi": 1.0853269395178131,
+    "asset_is_robot_controller": 1.3643926646939828,
+    "asset_is_network_switch": -0.5247639094684019,
+    "asset_is_engineering_workstation": -0.3016291874373837
+  },
+  "metrics": {
+    "cv_roc_auc_mean": 1.0,
+    "cv_roc_auc_std": 0.0,
+    "top_k_ot_critical": 10.0,
+    "top_k_mean_cvss": 7.989999999999999
+  },
+  "artifacts": []
+}

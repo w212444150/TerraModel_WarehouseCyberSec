@@ -1,0 +1,34 @@
+{
+  "model": "LogisticRegression (learned weights)",
+  "cv_folds": 3,
+  "cv_roc_auc_mean": 1.0,
+  "cv_roc_auc_std": 0.0,
+  "learned_coefficients": {
+    "cvss_norm": -0.0621,
+    "exposure_hint": 0.4238,
+    "age_score": 0.0,
+    "asset_is_plc": 1.4413,
+    "asset_is_hmi": 1.0853,
+    "asset_is_robot_controller": 1.3644,
+    "asset_is_network_switch": -0.5248,
+    "asset_is_engineering_workstation": -0.3016
+  },
+  "intercept": 0.3552,
+  "top_k": 10,
+  "top_k_ot_critical_count": 10,
+  "top_k_ot_critical_pct": 100.0,
+  "top_k_mean_cvss": 7.989999999999999,
+  "bottom_k_mean_cvss": 7.719999999999999,
+  "top_k_asset_distribution": {
+    "plc": 4,
+    "robot_controller": 4,
+    "hmi": 2
+  },
+  "baseline_phase02": {
+    "top_k_ot_critical_count": 7,
+    "top_k_mean_cvss": 8.66
+  },
+  "lift_over_baseline": {
+    "ot_in_top_k_delta": 3
+  }
+}

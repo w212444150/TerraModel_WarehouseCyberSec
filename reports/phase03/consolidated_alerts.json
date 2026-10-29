@@ -1,0 +1,366 @@
+{
+  "pipeline": "TerraModel Phase 03 orchestrator",
+  "total_a1_alerts_above_threshold": 193,
+  "total_a3_alerts_above_threshold": 1049,
+  "agent2_top_k_count": 10,
+  "agent2_ot_critical_in_top_k": 10,
+  "sample_alerts": [
+    {
+      "detector": "agent1_xgboost",
+      "alert_score": 0.8978,
+      "ground_truth_attack_class": "T0855",
+      "scenario_id": 7,
+      "attack_mappings": [
+        {
+          "technique_id": "T0855",
+          "name": "Unauthorized Command Message",
+          "url": "https://attack.mitre.org/techniques/T0855",
+          "frameworks": {
+            "attack_tactic": "Impair Process Control",
+            "nist_csf_2_0": [
+              "DE.AE-02 (Potentially adverse events are analyzed)",
+              "DE.CM-01 (Networks monitored)",
+              "PR.AA-01 (Identities and credentials are managed)"
+            ],
+            "iec_62443_3_3": [
+              "SR 1.1 (Human user identification and authentication)",
+              "SR 1.2 (Software process and device identification)",
+              "SR 3.1 (Communication integrity)"
+            ],
+            "nist_sp_800_82r3": [
+              "6.2.3 (Access control)",
+              "6.2.5 (Authentication and authorization)",
+              "6.2.7 (Monitoring and reporting)"
+            ],
+            "mitre_d3fend": [
+              "D3-MFA (Multi-factor Authentication)",
+              "D3-NTA (Network Traffic Analysis)",
+              "D3-PCSV (Process Code Segment Verification)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "detector": "agent1_xgboost",
+      "alert_score": 0.8889,
+      "ground_truth_attack_class": "T0855",
+      "scenario_id": 7,
+      "attack_mappings": [
+        {
+          "technique_id": "T0855",
+          "name": "Unauthorized Command Message",
+          "url": "https://attack.mitre.org/techniques/T0855",
+          "frameworks": {
+            "attack_tactic": "Impair Process Control",
+            "nist_csf_2_0": [
+              "DE.AE-02 (Potentially adverse events are analyzed)",
+              "DE.CM-01 (Networks monitored)",
+              "PR.AA-01 (Identities and credentials are managed)"
+            ],
+            "iec_62443_3_3": [
+              "SR 1.1 (Human user identification and authentication)",
+              "SR 1.2 (Software process and device identification)",
+              "SR 3.1 (Communication integrity)"
+            ],
+            "nist_sp_800_82r3": [
+              "6.2.3 (Access control)",
+              "6.2.5 (Authentication and authorization)",
+              "6.2.7 (Monitoring and reporting)"
+            ],
+            "mitre_d3fend": [
+              "D3-MFA (Multi-factor Authentication)",
+              "D3-NTA (Network Traffic Analysis)",
+              "D3-PCSV (Process Code Segment Verification)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "detector": "agent1_xgboost",
+      "alert_score": 0.9367,
+      "ground_truth_attack_class": "T0866",
+      "scenario_id": 4,
+      "attack_mappings": [
+        {
+          "technique_id": "T0866",
+          "name": "Exploitation of Remote Services",
+          "url": "https://attack.mitre.org/techniques/T0866",
+          "frameworks": {
+            "attack_tactic": "Initial Access",
+            "nist_csf_2_0": [
+              "ID.RA-01 (Vulnerabilities are identified)",
+              "PR.PS-02 (Software is maintained)",
+              "DE.CM-01 (Networks monitored)"
+            ],
+            "iec_62443_3_3": [
+              "SR 2.4 (Mobile code)",
+              "SR 3.2 (Protection from malicious code)",
+              "SR 7.8 (Auditable events)"
+            ],
+            "nist_sp_800_82r3": [
+              "5.3 (Vulnerability management)",
+              "6.2.1 (System hardening)"
+            ],
+            "mitre_d3fend": [
+              "D3-NTA (Network Traffic Analysis)",
+              "D3-RFEM (Remote File Access Mediation)",
+              "D3-PH (Process Hardening)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "detector": "agent1_xgboost",
+      "alert_score": 0.9362,
+      "ground_truth_attack_class": "T0866",
+      "scenario_id": 4,
+      "attack_mappings": [
+        {
+          "technique_id": "T0866",
+          "name": "Exploitation of Remote Services",
+          "url": "https://attack.mitre.org/techniques/T0866",
+          "frameworks": {
+            "attack_tactic": "Initial Access",
+            "nist_csf_2_0": [
+              "ID.RA-01 (Vulnerabilities are identified)",
+              "PR.PS-02 (Software is maintained)",
+              "DE.CM-01 (Networks monitored)"
+            ],
+            "iec_62443_3_3": [
+              "SR 2.4 (Mobile code)",
+              "SR 3.2 (Protection from malicious code)",
+              "SR 7.8 (Auditable events)"
+            ],
+            "nist_sp_800_82r3": [
+              "5.3 (Vulnerability management)",
+              "6.2.1 (System hardening)"
+            ],
+            "mitre_d3fend": [
+              "D3-NTA (Network Traffic Analysis)",
+              "D3-RFEM (Remote File Access Mediation)",
+              "D3-PH (Process Hardening)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "detector": "agent1_xgboost",
+      "alert_score": 0.9315,
+      "ground_truth_attack_class": "T0855",
+      "scenario_id": 7,
+      "attack_mappings": [
+        {
+          "technique_id": "T0855",
+          "name": "Unauthorized Command Message",
+          "url": "https://attack.mitre.org/techniques/T0855",
+          "frameworks": {
+            "attack_tactic": "Impair Process Control",
+            "nist_csf_2_0": [
+              "DE.AE-02 (Potentially adverse events are analyzed)",
+              "DE.CM-01 (Networks monitored)",
+              "PR.AA-01 (Identities and credentials are managed)"
+            ],
+            "iec_62443_3_3": [
+              "SR 1.1 (Human user identification and authentication)",
+              "SR 1.2 (Software process and device identification)",
+              "SR 3.1 (Communication integrity)"
+            ],
+            "nist_sp_800_82r3": [
+              "6.2.3 (Access control)",
+              "6.2.5 (Authentication and authorization)",
+              "6.2.7 (Monitoring and reporting)"
+            ],
+            "mitre_d3fend": [
+              "D3-MFA (Multi-factor Authentication)",
+              "D3-NTA (Network Traffic Analysis)",
+              "D3-PCSV (Process Code Segment Verification)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "detector": "agent1_xgboost",
+      "alert_score": 0.8894,
+      "ground_truth_attack_class": "T0855",
+      "scenario_id": 7,
+      "attack_mappings": [
+        {
+          "technique_id": "T0855",
+          "name": "Unauthorized Command Message",
+          "url": "https://attack.mitre.org/techniques/T0855",
+          "frameworks": {
+            "attack_tactic": "Impair Process Control",
+            "nist_csf_2_0": [
+              "DE.AE-02 (Potentially adverse events are analyzed)",
+              "DE.CM-01 (Networks monitored)",
+              "PR.AA-01 (Identities and credentials are managed)"
+            ],
+            "iec_62443_3_3": [
+              "SR 1.1 (Human user identification and authentication)",
+              "SR 1.2 (Software process and device identification)",
+              "SR 3.1 (Communication integrity)"
+            ],
+            "nist_sp_800_82r3": [
+              "6.2.3 (Access control)",
+              "6.2.5 (Authentication and authorization)",
+              "6.2.7 (Monitoring and reporting)"
+            ],
+            "mitre_d3fend": [
+              "D3-MFA (Multi-factor Authentication)",
+              "D3-NTA (Network Traffic Analysis)",
+              "D3-PCSV (Process Code Segment Verification)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "detector": "agent1_xgboost",
+      "alert_score": 0.9355,
+      "ground_truth_attack_class": "T0866",
+      "scenario_id": 4,
+      "attack_mappings": [
+        {
+          "technique_id": "T0866",
+          "name": "Exploitation of Remote Services",
+          "url": "https://attack.mitre.org/techniques/T0866",
+          "frameworks": {
+            "attack_tactic": "Initial Access",
+            "nist_csf_2_0": [
+              "ID.RA-01 (Vulnerabilities are identified)",
+              "PR.PS-02 (Software is maintained)",
+              "DE.CM-01 (Networks monitored)"
+            ],
+            "iec_62443_3_3": [
+              "SR 2.4 (Mobile code)",
+              "SR 3.2 (Protection from malicious code)",
+              "SR 7.8 (Auditable events)"
+            ],
+            "nist_sp_800_82r3": [
+              "5.3 (Vulnerability management)",
+              "6.2.1 (System hardening)"
+            ],
+            "mitre_d3fend": [
+              "D3-NTA (Network Traffic Analysis)",
+              "D3-RFEM (Remote File Access Mediation)",
+              "D3-PH (Process Hardening)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "detector": "agent1_xgboost",
+      "alert_score": 0.9032,
+      "ground_truth_attack_class": "T0855",
+      "scenario_id": 7,
+      "attack_mappings": [
+        {
+          "technique_id": "T0855",
+          "name": "Unauthorized Command Message",
+          "url": "https://attack.mitre.org/techniques/T0855",
+          "frameworks": {
+            "attack_tactic": "Impair Process Control",
+            "nist_csf_2_0": [
+              "DE.AE-02 (Potentially adverse events are analyzed)",
+              "DE.CM-01 (Networks monitored)",
+              "PR.AA-01 (Identities and credentials are managed)"
+            ],
+            "iec_62443_3_3": [
+              "SR 1.1 (Human user identification and authentication)",
+              "SR 1.2 (Software process and device identification)",
+              "SR 3.1 (Communication integrity)"
+            ],
+            "nist_sp_800_82r3": [
+              "6.2.3 (Access control)",
+              "6.2.5 (Authentication and authorization)",
+              "6.2.7 (Monitoring and reporting)"
+            ],
+            "mitre_d3fend": [
+              "D3-MFA (Multi-factor Authentication)",
+              "D3-NTA (Network Traffic Analysis)",
+              "D3-PCSV (Process Code Segment Verification)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "detector": "agent1_xgboost",
+      "alert_score": 0.9348,
+      "ground_truth_attack_class": "T0866",
+      "scenario_id": 4,
+      "attack_mappings": [
+        {
+          "technique_id": "T0866",
+          "name": "Exploitation of Remote Services",
+          "url": "https://attack.mitre.org/techniques/T0866",
+          "frameworks": {
+            "attack_tactic": "Initial Access",
+            "nist_csf_2_0": [
+              "ID.RA-01 (Vulnerabilities are identified)",
+              "PR.PS-02 (Software is maintained)",
+              "DE.CM-01 (Networks monitored)"
+            ],
+            "iec_62443_3_3": [
+              "SR 2.4 (Mobile code)",
+              "SR 3.2 (Protection from malicious code)",
+              "SR 7.8 (Auditable events)"
+            ],
+            "nist_sp_800_82r3": [
+              "5.3 (Vulnerability management)",
+              "6.2.1 (System hardening)"
+            ],
+            "mitre_d3fend": [
+              "D3-NTA (Network Traffic Analysis)",
+              "D3-RFEM (Remote File Access Mediation)",
+              "D3-PH (Process Hardening)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "detector": "agent1_xgboost",
+      "alert_score": 0.9362,
+      "ground_truth_attack_class": "T0855",
+      "scenario_id": 7,
+      "attack_mappings": [
+        {
+          "technique_id": "T0855",
+          "name": "Unauthorized Command Message",
+          "url": "https://attack.mitre.org/techniques/T0855",
+          "frameworks": {
+            "attack_tactic": "Impair Process Control",
+            "nist_csf_2_0": [
+              "DE.AE-02 (Potentially adverse events are analyzed)",
+              "DE.CM-01 (Networks monitored)",
+              "PR.AA-01 (Identities and credentials are managed)"
+            ],
+            "iec_62443_3_3": [
+              "SR 1.1 (Human user identification and authentication)",
+              "SR 1.2 (Software process and device identification)",
+              "SR 3.1 (Communication integrity)"
+            ],
+            "nist_sp_800_82r3": [
+              "6.2.3 (Access control)",
+              "6.2.5 (Authentication and authorization)",
+              "6.2.7 (Monitoring and reporting)"
+            ],
+            "mitre_d3fend": [
+              "D3-MFA (Multi-factor Authentication)",
+              "D3-NTA (Network Traffic Analysis)",
+              "D3-PCSV (Process Code Segment Verification)"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "total_sample_alerts_recorded": 62
+}

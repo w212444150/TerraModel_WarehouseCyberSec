@@ -1,0 +1,24 @@
+{
+  "name": "agent1_xgboost_optuna",
+  "started_at": 1793310145.660181,
+  "duration_s": 0.01,
+  "params": {
+    "model": "XGBClassifier",
+    "n_trials": 30,
+    "n_estimators": 199,
+    "max_depth": 9,
+    "learning_rate": 0.01169785807970127,
+    "subsample": 0.898277841611297,
+    "colsample_bytree": 0.7572859129174475,
+    "min_child_weight": 4,
+    "reg_lambda": 2.0325504681019697
+  },
+  "metrics": {
+    "val_f1": 0.5204081632653061,
+    "val_precision": 0.6710526315789473,
+    "val_recall": 0.425,
+    "val_pr_auc": 0.6880257872147375,
+    "val_roc_auc": 0.6225077160493827
+  },
+  "artifacts": []
+}

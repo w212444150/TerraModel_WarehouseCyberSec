@@ -1,8 +1,9 @@
 # TerraModel Warehouse Cybersecurity - Make targets
 # Robert B. Thompson, Cesar Noriega
-.PHONY: setup fetch data baseline eda clean-all test all
+.PHONY: setup fetch data baseline eda clean-all test all phase03
 
 PYTHON ?= python3
+PYRUN ?= PYTHONPATH=. $(PYTHON)
 
 setup:
 	$(PYTHON) -m pip install -r requirements.txt
@@ -27,12 +28,21 @@ baseline:
 eda:
 	$(PYTHON) notebooks/06_baseline_eda.py
 
-test:
-	$(PYTHON) -m pytest tests/ -v
+phase03:
+	$(PYRUN) agents/agent1_anomaly/phase03_supervised.py
+	$(PYRUN) agents/agent3_integrity/phase03_supervised.py
+	$(PYRUN) agents/agent2_assessment/phase03_learned.py
+	$(PYRUN) agents/orchestrator/phase03_pipeline.py
+	$(PYRUN) -c "from experiments.tracker import consolidate; consolidate()"
 
-all: data baseline eda
+test:
+	$(PYRUN) -m pytest tests/ -v
+
+all: data baseline eda phase03
 
 clean-all:
 	rm -rf data/raw/*.parquet data/processed/*.parquet data/processed/*.csv
 	rm -rf data/processed/*.json data/threat/attack/*.json data/threat/cisa/*.json
 	rm -rf data/threat/cisa/*.csv models/*.joblib reports/*.json reports/*.csv reports/*.png
+	rm -rf reports/phase03/*.json reports/phase03/*.png reports/phase03/*.csv
+	rm -rf reports/phase03/experiments/*.json

@@ -36,7 +36,7 @@ jobs:
           python pipeline/features.py
           python pipeline/split.py
 
-      - name: Train baselines
+      - name: Train Phase 02 baselines
         run: |
           python agents/agent1_anomaly/baseline.py
           python agents/agent2_assessment/baseline.py
@@ -45,12 +45,30 @@ jobs:
       - name: Build EDA
         run: python notebooks/06_baseline_eda.py
 
-      - name: Run tests
-        run: python -m pytest tests/ -v
+      - name: Train Phase 03 supervised models
+        run: |
+          PYTHONPATH=. python agents/agent1_anomaly/phase03_supervised.py
+          PYTHONPATH=. python agents/agent3_integrity/phase03_supervised.py
+          PYTHONPATH=. python agents/agent2_assessment/phase03_learned.py
+          PYTHONPATH=. python agents/orchestrator/phase03_pipeline.py
+          PYTHONPATH=. python -c "from experiments.tracker import consolidate; consolidate()"
 
-      - name: Upload metrics summary
+      - name: Run tests
+        run: PYTHONPATH=. python -m pytest tests/ -v
+
+      - name: Upload Phase 02 metrics
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: metrics
+          name: metrics-phase02
           path: reports/metrics_summary.json
+
+      - name: Upload Phase 03 artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrics-phase03
+          path: |
+            reports/phase03/**/*.json
+            reports/phase03/**/*.png
+            reports/phase03/**/*.csv

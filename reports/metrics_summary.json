@@ -37,7 +37,7 @@
         "asset_type": "hmi",
         "cvss_v3": 8.9,
         "exposure_hint": 1,
-        "age_days": 709,
+        "age_days": 734,
         "score": 0.8940000000000001
       },
       {
@@ -47,7 +47,7 @@
         "asset_type": "plc",
         "cvss_v3": 8.5,
         "exposure_hint": 1,
-        "age_days": 628,
+        "age_days": 653,
         "score": 0.8700000000000001
       },
       {
@@ -57,7 +57,7 @@
         "asset_type": "hmi",
         "cvss_v3": 7.5,
         "exposure_hint": 1,
-        "age_days": 614,
+        "age_days": 639,
         "score": 0.81
       },
       {
@@ -67,7 +67,7 @@
         "asset_type": "plc",
         "cvss_v3": 9.3,
         "exposure_hint": 0,
-        "age_days": 586,
+        "age_days": 611,
         "score": 0.6180000000000001
       },
       {
@@ -77,7 +77,7 @@
         "asset_type": "other",
         "cvss_v3": 9.1,
         "exposure_hint": 0,
-        "age_days": 537,
+        "age_days": 562,
         "score": 0.6060000000000001
       },
       {
@@ -87,7 +87,7 @@
         "asset_type": "robot_controller",
         "cvss_v3": 9.0,
         "exposure_hint": 0,
-        "age_days": 653,
+        "age_days": 678,
         "score": 0.6000000000000001
       },
       {
@@ -97,7 +97,7 @@
         "asset_type": "plc",
         "cvss_v3": 8.8,
         "exposure_hint": 0,
-        "age_days": 572,
+        "age_days": 597,
         "score": 0.5880000000000001
       },
       {
@@ -107,7 +107,7 @@
         "asset_type": "other",
         "cvss_v3": 8.6,
         "exposure_hint": 0,
-        "age_days": 537,
+        "age_days": 562,
         "score": 0.5760000000000001
       },
       {
@@ -117,7 +117,7 @@
         "asset_type": "other",
         "cvss_v3": 8.6,
         "exposure_hint": 0,
-        "age_days": 667,
+        "age_days": 692,
         "score": 0.5760000000000001
       },
       {
@@ -127,7 +127,7 @@
         "asset_type": "plc",
         "cvss_v3": 8.3,
         "exposure_hint": 0,
-        "age_days": 688,
+        "age_days": 713,
         "score": 0.558
       }
     ]

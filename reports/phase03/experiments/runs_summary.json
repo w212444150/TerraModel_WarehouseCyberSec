@@ -1,0 +1,93 @@
+[
+  {
+    "name": "agent1_random_forest",
+    "started_at": 1793310138.499522,
+    "duration_s": 1.265,
+    "params": {
+      "model": "RandomForestClassifier",
+      "n_estimators": 300,
+      "min_samples_leaf": 2,
+      "class_weight": "balanced"
+    },
+    "metrics": {
+      "val_f1": 0.51875,
+      "val_precision": 0.5928571428571429,
+      "val_recall": 0.46111111111111114,
+      "val_pr_auc": 0.6712322850090157,
+      "val_roc_auc": 0.6028703703703703
+    },
+    "artifacts": []
+  },
+  {
+    "name": "agent1_xgboost_optuna",
+    "started_at": 1793310145.660181,
+    "duration_s": 0.01,
+    "params": {
+      "model": "XGBClassifier",
+      "n_trials": 30,
+      "n_estimators": 199,
+      "max_depth": 9,
+      "learning_rate": 0.01169785807970127,
+      "subsample": 0.898277841611297,
+      "colsample_bytree": 0.7572859129174475,
+      "min_child_weight": 4,
+      "reg_lambda": 2.0325504681019697
+    },
+    "metrics": {
+      "val_f1": 0.5204081632653061,
+      "val_precision": 0.6710526315789473,
+      "val_recall": 0.425,
+      "val_pr_auc": 0.6880257872147375,
+      "val_roc_auc": 0.6225077160493827
+    },
+    "artifacts": []
+  },
+  {
+    "name": "agent3_xgboost_optuna",
+    "started_at": 1793310158.2835097,
+    "duration_s": 0.016,
+    "params": {
+      "model": "XGBClassifier",
+      "n_trials": 30,
+      "n_estimators": 278,
+      "max_depth": 5,
+      "learning_rate": 0.06333268775321842,
+      "subsample": 0.6563696899899051,
+      "colsample_bytree": 0.9208787923016158,
+      "min_child_weight": 1,
+      "reg_lambda": 4.9344346830025865
+    },
+    "metrics": {
+      "val_f1": 0.793233082706767,
+      "val_precision": 0.8053435114503816,
+      "val_recall": 0.7814814814814814,
+      "val_pr_auc": 0.8958969290785384,
+      "val_roc_auc": 0.8921827846364884
+    },
+    "artifacts": []
+  },
+  {
+    "name": "agent2_logistic",
+    "started_at": 1793310302.8274276,
+    "duration_s": 0.0,
+    "params": {
+      "model": "LogisticRegression",
+      "cv_folds": 3,
+      "cvss_norm": -0.06213515313348216,
+      "exposure_hint": 0.423791118873706,
+      "age_score": 0.0,
+      "asset_is_plc": 1.4412502396199456,
+      "asset_is_hmi": 1.0853269395178131,
+      "asset_is_robot_controller": 1.3643926646939828,
+      "asset_is_network_switch": -0.5247639094684019,
+      "asset_is_engineering_workstation": -0.3016291874373837
+    },
+    "metrics": {
+      "cv_roc_auc_mean": 1.0,
+      "cv_roc_auc_std": 0.0,
+      "top_k_ot_critical": 10.0,
+      "top_k_mean_cvss": 7.989999999999999
+    },
+    "artifacts": []
+  }
+]
