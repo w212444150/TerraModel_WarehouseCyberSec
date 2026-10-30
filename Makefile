@@ -54,6 +54,12 @@ multi-seed:
 multi-seed-fresh:
 	$(PYRUN) experiments/multi_seed_eval.py --n-seeds 5 --fresh-data
 
+live:
+	$(PYRUN) experiments/live_eval.py
+
+live-no-jitter:
+	$(PYRUN) experiments/live_eval.py --jitter 0.0
+
 test:
 	$(PYRUN) -m pytest tests/ -v
 
