@@ -2,16 +2,32 @@
 
 Capstone project by **Robert B. Thompson** and **Cesar Noriega** (Team TerraModel), Applied AI and Robotics AAS, Houston Community College, Fall 2026.
 
-Multi-agent AI system for detecting cyber threats against robots, PLCs, and industrial sensors in an automated warehouse environment. Three detection agents feed an orchestrator that tags findings with real MITRE ATT&CK for ICS technique IDs.
+Multi-agent AI system for detecting cyber threats against robots, PLCs, and industrial sensors in an automated warehouse environment. Three detection agents feed an orchestrator that tags findings with real MITRE ATT&CK for ICS technique IDs and defensive controls from NIST CSF 2.0, IEC 62443, NIST SP 800-82 Rev. 3, and MITRE D3FEND.
 
-## Project phases
+## For graders and reviewers
 
-| Phase | Weeks | Deliverable | Document |
+Start here. Each row below links to the full submission for one phase.
+
+| Phase | Weeks | Primary Deliverable | Supporting Documents |
 |---|---|---|---|
-| Phase 01 | 1 through 3 | Initial Advance proposal (problem, solution, scope, roadmap) | [`docs/phase01-initial-advance.md`](docs/phase01-initial-advance.md) + [`docs/phase01-initial-advance.pptx`](docs/phase01-initial-advance.pptx) |
-| Phase 02 | 4 through 6 | Data pipeline, feature engineering, baseline models | [`docs/phase02-data-report.md`](docs/phase02-data-report.md) |
-| Phase 03 | 7 through 10 | Supervised trained models with evaluation + cybersecurity framework mapping | [`docs/phase03-model-report.md`](docs/phase03-model-report.md) |
-| Phase 04 | 11 through 12 | Integration, red team dry run, final delivery (planned) | - |
+| Phase 01 | 1-3 | [Initial Advance (slide deck)](docs/phase01-initial-advance.pptx) | [Phase 01 markdown](docs/phase01-initial-advance.md) |
+| Phase 02 | 4-6 | [Phase 02 Data Report](docs/phase02-data-report.md) | - |
+| Phase 03 | 7-10 | **[Phase 03 Deliverable (Word)](docs/TerraModel_Phase03_Deliverable.docx)** or [PDF](docs/TerraModel_Phase03_Deliverable.pdf) | [Model Report](docs/phase03-model-report.md), [Limitation Fixes](docs/phase03-limitation-fixes.md) |
+| Phase 04 | 11-12 | Integration, red team dry run, final delivery (planned) | - |
+
+### Reproduce every number in the Phase 03 deliverable
+
+```bash
+git clone https://github.com/w212444150/TerraModel_WarehouseCyberSec.git
+cd TerraModel_WarehouseCyberSec
+make setup           # install dependencies
+make phase03-fixes   # run the full Phase 03 pipeline with limitation fixes
+make test            # 16 pytest cases, all pass
+```
+
+Total runtime: about 90 seconds on a laptop. Random seed is pinned at 42 in `config.yaml`. GitHub Actions CI runs the full pipeline on every push to the main branch.
+
+Google Colab version (recommended for graders): paste cells from `docs/phase03-model-report.md` section 6 into a fresh Colab notebook. The live CISA KEV catalog returns 1,764+ real entries on Colab (sandbox blocks it).
 
 ## Honest scope statement
 
