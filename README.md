@@ -22,10 +22,11 @@ git clone https://github.com/w212444150/TerraModel_WarehouseCyberSec.git
 cd TerraModel_WarehouseCyberSec
 make setup           # install dependencies
 make phase03-fixes   # run the full Phase 03 pipeline with limitation fixes
-make test            # 16 pytest cases, all pass
+make multi-seed      # 10-seed mean +/- std per metric (honest variance check)
+make test            # pytest suite, all pass
 ```
 
-Total runtime: about 90 seconds on a laptop. Random seed is pinned at 42 in `config.yaml`. GitHub Actions CI runs the full pipeline on every push to the main branch.
+Total runtime: about 2 minutes on a laptop. Random seed is pinned at 42 in `config.yaml` for reproducibility. The `multi-seed` target runs 10 different seeds to prove the pipeline actually trains a model (not reporting fixed hardcoded numbers) and reports real statistical variance. See [`docs/data-sources-and-variance.md`](docs/data-sources-and-variance.md) for the full data-sources audit and current multi-seed metrics.
 
 Google Colab version (recommended for graders): paste cells from `docs/phase03-model-report.md` section 6 into a fresh Colab notebook. The live CISA KEV catalog returns 1,764+ real entries on Colab (sandbox blocks it).
 

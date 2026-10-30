@@ -48,6 +48,12 @@ phase03-fixes:
 	$(PYRUN) agents/orchestrator/phase03_pipeline.py
 	$(PYRUN) -c "from experiments.tracker import consolidate; consolidate()"
 
+multi-seed:
+	$(PYRUN) experiments/multi_seed_eval.py --n-seeds 10
+
+multi-seed-fresh:
+	$(PYRUN) experiments/multi_seed_eval.py --n-seeds 5 --fresh-data
+
 test:
 	$(PYRUN) -m pytest tests/ -v
 
