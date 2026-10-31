@@ -1,0 +1,117 @@
+{
+  "method": "Final optimization pass: 100 Optuna trials with widened search space, early stopping",
+  "search_space": {
+    "n_estimators": "[100, 1000]  (was [100, 500])",
+    "max_depth": "[3, 15]  (was [3, 10])",
+    "learning_rate": "[0.005, 0.3] log  (was [0.01, 0.3])",
+    "subsample": "[0.5, 1.0]  (was [0.6, 1.0])",
+    "colsample_bytree": "[0.5, 1.0]  (was [0.6, 1.0])",
+    "min_child_weight": "[1, 20]  (was [1, 10])",
+    "reg_lambda": "[1e-5, 10] log  (was [0.0, 5.0])",
+    "reg_alpha": "[1e-5, 10] log  (new)",
+    "gamma": "[0.0, 5.0]  (new)",
+    "scale_pos_weight": "[0.5, 2.0]  (new)"
+  },
+  "trials_per_agent": 100,
+  "early_stopping_rounds": 20,
+  "agent1": {
+    "best_params": {
+      "n_estimators": 228,
+      "max_depth": 15,
+      "learning_rate": 0.19100501021643643,
+      "subsample": 0.5674680861556213,
+      "colsample_bytree": 0.6343763868168684,
+      "min_child_weight": 4,
+      "reg_lambda": 0.0011691048720414647,
+      "reg_alpha": 0.006215346589728414,
+      "gamma": 2.3901782515031322,
+      "scale_pos_weight": 0.707432938996711
+    },
+    "best_val_pr_auc": 0.7162855116235503,
+    "test_metrics": {
+      "f1": 0.4477124183006536,
+      "precision": 0.5436507936507936,
+      "recall": 0.38055555555555554,
+      "pr_auc": 0.6333510686822527,
+      "roc_auc": 0.5705555555555556,
+      "confusion_matrix": [
+        [
+          245,
+          115
+        ],
+        [
+          223,
+          137
+        ]
+      ]
+    },
+    "prior_champion_test_metrics": {
+      "f1": 0.43399638336347196,
+      "precision": 0.6217616580310881,
+      "recall": 0.3333333333333333,
+      "pr_auc": 0.6603605348639456,
+      "roc_auc": 0.5882330246913581,
+      "confusion_matrix": [
+        [
+          287,
+          73
+        ],
+        [
+          240,
+          120
+        ]
+      ]
+    },
+    "promotion_decision": "PR-AUC 0.6604 -> 0.6334 (delta -0.0270) keep prior"
+  },
+  "agent3": {
+    "best_params": {
+      "n_estimators": 558,
+      "max_depth": 15,
+      "learning_rate": 0.0458250213330641,
+      "subsample": 0.880506294039021,
+      "colsample_bytree": 0.8640837961173008,
+      "min_child_weight": 12,
+      "reg_lambda": 0.003946263826992434,
+      "reg_alpha": 0.025149602492284345,
+      "gamma": 0.26667895040216244,
+      "scale_pos_weight": 1.0263566546094642
+    },
+    "best_val_pr_auc": 0.8985764698258135,
+    "test_metrics": {
+      "f1": 0.7955077211043519,
+      "precision": 0.804162724692526,
+      "recall": 0.7870370370370371,
+      "pr_auc": 0.8951481597817792,
+      "roc_auc": 0.8857510288065844,
+      "confusion_matrix": [
+        [
+          873,
+          207
+        ],
+        [
+          230,
+          850
+        ]
+      ]
+    },
+    "prior_champion_test_metrics": {
+      "f1": 0.7928604978863316,
+      "precision": 0.8045757864632984,
+      "recall": 0.7814814814814814,
+      "pr_auc": 0.8970691318226462,
+      "roc_auc": 0.8867781207133059,
+      "confusion_matrix": [
+        [
+          875,
+          205
+        ],
+        [
+          236,
+          844
+        ]
+      ]
+    },
+    "promotion_decision": "PR-AUC 0.8971 -> 0.8951 (delta -0.0019) keep prior"
+  }
+}

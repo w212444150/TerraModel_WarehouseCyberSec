@@ -60,6 +60,18 @@ live:
 live-no-jitter:
 	$(PYRUN) experiments/live_eval.py --jitter 0.0
 
+ensemble:
+	$(PYRUN) agents/orchestrator/ensemble.py
+
+final-opt:
+	$(PYRUN) experiments/final_optimization.py
+
+demo:
+	$(PYRUN) experiments/demo.py
+
+week10: ensemble final-opt
+	@echo "Week 10 refinement complete (ensemble + final optimization)"
+
 test:
 	$(PYRUN) -m pytest tests/ -v
 

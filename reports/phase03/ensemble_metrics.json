@@ -1,0 +1,118 @@
+{
+  "method": "VotingClassifier (soft voting, RF + XGBoost)",
+  "rationale": "Random Forest reduces variance via bagging; XGBoost reduces bias via boosting. Averaging their probabilities tends to lift PR-AUC by 1-3 pp on tabular data when the individual models have different error patterns.",
+  "agent1": {
+    "agent": "agent1",
+    "random_forest": {
+      "f1": 0.4890282131661442,
+      "precision": 0.5611510791366906,
+      "recall": 0.43333333333333335,
+      "pr_auc": 0.6529971830973686,
+      "roc_auc": 0.5805671296296296,
+      "confusion_matrix": [
+        [
+          238,
+          122
+        ],
+        [
+          204,
+          156
+        ]
+      ]
+    },
+    "xgboost": {
+      "f1": 0.5206349206349207,
+      "precision": 0.6074074074074074,
+      "recall": 0.45555555555555555,
+      "pr_auc": 0.6677397418417826,
+      "roc_auc": 0.5952546296296296,
+      "confusion_matrix": [
+        [
+          254,
+          106
+        ],
+        [
+          196,
+          164
+        ]
+      ]
+    },
+    "soft_ensemble": {
+      "f1": 0.5087440381558028,
+      "precision": 0.5947955390334573,
+      "recall": 0.4444444444444444,
+      "pr_auc": 0.6613782256705831,
+      "roc_auc": 0.5883564814814815,
+      "confusion_matrix": [
+        [
+          251,
+          109
+        ],
+        [
+          200,
+          160
+        ]
+      ]
+    },
+    "ensemble_pr_auc_delta_vs_best_single": -0.0064,
+    "ensemble_wins": false,
+    "production_pick": "best_single"
+  },
+  "agent3": {
+    "agent": "agent3",
+    "random_forest": {
+      "f1": 0.7868544600938967,
+      "precision": 0.7980952380952381,
+      "recall": 0.7759259259259259,
+      "pr_auc": 0.895195871345267,
+      "roc_auc": 0.8836518347050752,
+      "confusion_matrix": [
+        [
+          868,
+          212
+        ],
+        [
+          242,
+          838
+        ]
+      ]
+    },
+    "xgboost": {
+      "f1": 0.7858156028368795,
+      "precision": 0.8028985507246377,
+      "recall": 0.7694444444444445,
+      "pr_auc": 0.8940882393467576,
+      "roc_auc": 0.8835322359396434,
+      "confusion_matrix": [
+        [
+          876,
+          204
+        ],
+        [
+          249,
+          831
+        ]
+      ]
+    },
+    "soft_ensemble": {
+      "f1": 0.7912713472485768,
+      "precision": 0.811284046692607,
+      "recall": 0.7722222222222223,
+      "pr_auc": 0.8972921380335345,
+      "roc_auc": 0.8863100137174211,
+      "confusion_matrix": [
+        [
+          886,
+          194
+        ],
+        [
+          246,
+          834
+        ]
+      ]
+    },
+    "ensemble_pr_auc_delta_vs_best_single": 0.0021,
+    "ensemble_wins": true,
+    "production_pick": "soft_ensemble"
+  }
+}

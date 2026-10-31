@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-10-31T20:19:03Z",
+  "ground_truth_attack_class": "T0855",
+  "detected_techniques": [
+    "T0836",
+    "T0832"
+  ],
+  "detection_correct": false,
+  "detectors": {
+    "agent1_xgboost": {
+      "fired": false,
+      "probability": 0.7595000000000001
+    },
+    "agent3_random_forest": {
+      "fired": true,
+      "probability": 0.7595000000000001
+    }
+  },
+  "framework_mapping": [
+    {
+      "technique_id": "T0836",
+      "name": "Modify Parameter",
+      "url": "https://attack.mitre.org/techniques/T0836",
+      "frameworks": {
+        "attack_tactic": "Impair Process Control",
+        "nist_csf_2_0": [
+          "DE.CM-01 (Networks and network services are monitored)",
+          "DE.CM-09 (Computing hardware and software are monitored)",
+          "PR.DS-05 (Protections against data leaks are implemented)",
+          "PR.PS-06 (Secure configurations)"
+        ],
+        "iec_62443_3_3": [
+          "SR 3.4 (Software and information integrity)",
+          "SR 4.1 (Information confidentiality)",
+          "SR 7.6 (Network and security configuration settings)"
+        ],
+        "nist_sp_800_82r3": [
+          "5.1 (ICS Security Risk Assessment)",
+          "6.2.4 (Change management for ICS)",
+          "6.2.7 (Monitoring and reporting)"
+        ],
+        "mitre_d3fend": [
+          "D3-NTA (Network Traffic Analysis)",
+          "D3-PA (Process Analysis)",
+          "D3-FBA (Function Baseline Analysis)"
+        ]
+      }
+    },
+    {
+      "technique_id": "T0832",
+      "name": "Manipulation of View",
+      "url": "https://attack.mitre.org/techniques/T0832",
+      "frameworks": {
+        "attack_tactic": "Impair Process Control",
+        "nist_csf_2_0": [
+          "DE.AE-03 (Information is correlated from multiple sources)",
+          "DE.CM-09 (Computing hardware and software monitored)",
+          "PR.DS-06 (Integrity checking mechanisms)"
+        ],
+        "iec_62443_3_3": [
+          "SR 3.4 (Software and information integrity)",
+          "SR 3.8 (Session integrity)"
+        ],
+        "nist_sp_800_82r3": [
+          "6.2.7 (Monitoring and reporting)",
+          "6.2.8 (Incident response)"
+        ],
+        "mitre_d3fend": [
+          "D3-FBA (Function Baseline Analysis)",
+          "D3-PA (Process Analysis)"
+        ]
+      }
+    }
+  ]
+}
